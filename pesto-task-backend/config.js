@@ -1,6 +1,6 @@
 // const { initializeApp } = require("firebase/app");
 // const { getFirestore } = require("firebase/firestore");
-// https://node-express-api-bd790.firebaseapp.com/__/auth/action?mode=action&oobCode=code
+// https://pesto-fullstack-task.onrender.com/__/auth/action?mode=action&oobCode=code
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { credential } = require('firebase-admin');
 const { getFirestore, Timestamp, FieldValue, Filter } = require('firebase-admin/firestore');

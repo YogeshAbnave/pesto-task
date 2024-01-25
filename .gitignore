@@ -1,2 +1,10 @@
-pesto-task-frontend/node_modules
-pesto-task-backend/node_modules
+# Ignore node_modules for frontend and backend
+pesto-task-frontend/node_modules/
+pesto-task-backend/node_modules/
+
+# Ignore package-lock.json for frontend and backend
+pesto-task-frontend/package-lock.json
+pesto-task-backend/package-lock.json
+
+
+package-lock.json

@@ -1,73 +1,43 @@
-# pesto-task
-Pesto Full-Stack Developer Challenge
+# Task Management Application
 
-# Getting Started with Create React App
+I have developed a Task Management Application using React, Node, and MongoDB. The code has been deployed on Render for the frontend and backend and Firebase for the database.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+To run the frontend locally, follow these steps:
+1. Navigate to the `frontend` directory.
+2. Run `npm install` to install dependencies.
+3. Run `npm run start` to start the development server.
 
-In the project directory, you can run:
+To run the backend locally, follow these steps:
+1. Navigate to the `backend` directory.
+2. Run `npm install` to install dependencies.
+3. Run `nodemon server.js` to start the backend server.
 
-### `npm start`
+## Code Documentation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All code is properly documented to provide clear understanding and maintainability.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+The application is deployed on Render. You can access the deployed application at [https://pesto-task-backend.onrender.com/](https://pesto-task-backend.onrender.com/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## GitHub Repository
 
-### `npm run build`
+The source code is available on GitHub at [https://github.com/YogeshAbnave/pesto-task.git](https://github.com/YogeshAbnave/pesto-task.git).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Folder Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In the `development` branch, you will find two folders: `pesto-task-frontend` and `pesto-task-backend`, containing all the code. The `backend` branch specifically includes the backend code deployed on Render.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Pending Work
+Some pending tasks include design enhancements and optional features. I will work on these tasks as soon as I have free time.
 
-### `npm run eject`
+I appreciate any feedback or suggestions you may have. Thank you for your interest in the Task Management Application!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Feedback
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I welcome any feedback or suggestions you may have. Feel free to explore the application, and if you encounter any issues or have ideas for improvement, please let me know.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for your time and consideration!

@@ -26,3 +26,61 @@ h1 {
     opacity: 0;
   }
 }
+
+
+/* Add this CSS to your global styles or component-specific styles */
+.header-bar {
+  background-color: #007bff; /* Example background color, you can customize */
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+.user-profile {
+  cursor: pointer;
+}
+
+/* .user-profile-image {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff; 
+  color: #007bff; 
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+} */
+
+.user-profile-image {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #fff; 
+  color: #007bff; 
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+/* Add this CSS to your global styles or component-specific styles */
+.user-profile-default-image {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: #ccc; /* Default background color for the default image */
+  color: #fff; /* Default text color for the default image */
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Customize these styles based on your design preferences */
