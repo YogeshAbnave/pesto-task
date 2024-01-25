@@ -2,19 +2,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const { connectToDatabase } = require('./db');
 const path = require('path');
-// const { Task } = require('./taskModel');
 const tasksCollection = require('./config');
 
 const app = express();
-const PORT = 3001;
+const PORT = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
-
-connectToDatabase();
 app.use(express.static(path.join(__dirname, 'public')));
+
+// test api
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello, this is your API!' });
+});
+
+// create data 
 app.post('/tasks', async (req, res) => {
   try {
     const { title, description, status } = req.body;
