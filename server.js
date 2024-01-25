@@ -2,9 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const { connectToDatabase } = require('./db');
 const path = require('path');
-// const { Task } = require('./taskModel');
 const tasksCollection = require('./config');
 
 const app = express();
@@ -12,8 +10,6 @@ const PORT = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
-
-// connectToDatabase();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api/hello', (req, res) => {
