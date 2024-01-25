@@ -12,11 +12,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// test api
 app.get('/api/hello', (req, res) => {
   res.json({ message: 'Hello, this is your API!' });
 });
 
-
+// create data 
 app.post('/tasks', async (req, res) => {
   try {
     const { title, description, status } = req.body;
