@@ -8,13 +8,19 @@ const path = require('path');
 const tasksCollection = require('./config');
 
 const app = express();
-const PORT = 3001;
+const PORT = 8080;
 
 app.use(cors());
 app.use(bodyParser.json());
 
 connectToDatabase();
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello, this is your API!' });
+});
+
+
 app.post('/tasks', async (req, res) => {
   try {
     const { title, description, status } = req.body;

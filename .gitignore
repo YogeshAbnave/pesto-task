@@ -1,2 +1,4 @@
-pesto-task-frontend/node_modules
-pesto-task-backend/node_modules
+# .gitignore
+
+# Node.js
+/node_modules
