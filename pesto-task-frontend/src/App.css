@@ -15,7 +15,9 @@ h1 {
 .fade-out {
   animation: fadeOut 0.5s ease-out;
 }
-
+.list-group-item+.list-group-item{
+  border-top-width: thin !important;
+}
 @keyframes fadeOut {
   from {
     opacity: 1;

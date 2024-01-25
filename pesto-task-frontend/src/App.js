@@ -15,7 +15,7 @@ const App = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/tasks');
+      const response = await axios.get('https://node-express-api-bd790.firebaseapp.com/tasks');
       setTasks(response.data);
     } catch (error) {
       console.error('Error fetching tasks:', error);
@@ -24,7 +24,7 @@ const App = () => {
 
   const handleCreateTask = async (newTask) => {
     try {
-      const response = await axios.post('http://localhost:3001/tasks', newTask);
+      const response = await axios.post('https://node-express-api-bd790.firebaseapp.com/tasks', newTask);
       setTasks([...tasks, response.data]);
     } catch (error) {
       console.error('Error creating task:', error);
@@ -32,10 +32,10 @@ const App = () => {
   };
   const handleUpdateStatus = async (task, newStatus) => {
     try {
-      const response = await axios.patch(`http://localhost:3001/tasks/${task._id}`, {
+      const response = await axios.patch(`https://node-express-api-bd790.firebaseapp.com/tasks/${task.id}`, {
         status: newStatus,
       });
-      setTasks(tasks.map((t) => (t._id === task._id ? response.data : t)));
+      setTasks(tasks.map((t) => (t.id === task.id ? response.data : t)));
     } catch (error) {
       console.error('Error updating task status:', error);
     }
@@ -43,8 +43,8 @@ const App = () => {
 
   const handleDeleteTask = async (task) => {
     try {
-      await axios.delete(`http://localhost:3001/tasks/${task._id}`);
-      setTasks((prevTasks) => prevTasks.filter((t) => t._id !== task._id));
+      await axios.delete(`https://node-express-api-bd790.firebaseapp.com/tasks/${task.id}`);
+      setTasks((prevTasks) => prevTasks.filter((t) => t.id !== task.id));
     } catch (error) {
       console.error('Error deleting task:', error);
     }
